@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ONYX LABS — We Engineer What's Next | Software Engineering & Digital Solutions</title>
+    <meta name="description" content="ONYX LABS est une agence indépendante d'ingénierie logicielle, de plateformes numériques et de systèmes intelligents accompagnant les organisations au Cameroun, en Afrique, en Europe et au Canada." />
+    <meta property="og:title" content="ONYX LABS — We Engineer What's Next" />
+    <meta property="og:description" content="Turning ambitious ideas into powerful digital experiences. Software Development, Enterprise ERP, E-commerce, UI/UX & AI Systems." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('onyx_theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = saved ? saved : (prefersDark !== false ? 'dark' : 'light');
+          document.documentElement.classList.toggle('dark', theme === 'dark');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#080A0F] text-[#F5F5F7] antialiased selection:bg-[#8B5CF6]/30 selection:text-[#35D9D0]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
